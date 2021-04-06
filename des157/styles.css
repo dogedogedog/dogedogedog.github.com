@@ -7,12 +7,13 @@ body {
 #name {
     text-align: center;
     margin-bottom: 100px;
+    position: relative;
 }
 
 #name h1 {
     /* display: inline; */
     font-family: 'Playball', cursive;
-    font-size: 42px;
+    font-size: 37px;
     letter-spacing: 6px;
     margin: 0;
     color: #c4a886;
@@ -21,7 +22,7 @@ body {
 #name h2 {
     /* display: inline; */
     font-family: 'Titillium Web', sans-serif;
-    font-size: 23px;
+    font-size: 19px;
     letter-spacing: 12px;
     padding-left: 10px;
     color: #d8cfad;
@@ -29,7 +30,7 @@ body {
 
 #name h3 {
     font-family: 'Cinzel Decorative', cursive;    
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
     letter-spacing: 5px;
     color: #e4cfb9;
@@ -69,7 +70,18 @@ section ul li{
     letter-spacing: 2px;
     padding-top: 8px; 
     padding-bottom: 8px;
+}
+
+section ul li a{
+    text-decoration: none;
     color: #ac9c93;
+}
+
+section ul li a:hover {
+    text-decoration: none;
+    color: #422619;
+    background-color: #d6cac3;
+    font-weight: bolder;
 }
 
 footer {
