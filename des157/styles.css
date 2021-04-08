@@ -3,8 +3,8 @@ body {
     min-width: 900px;
     background-image: radial-gradient(#422619, black);
     margin: auto;
-    display: flexbox;
-    align-content: center;
+    /* display: flexbox;
+    align-content: center; */
 }
 
 #name {
