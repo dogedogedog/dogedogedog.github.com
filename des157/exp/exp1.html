@@ -10,13 +10,12 @@
     <h1>Experiment 1</h1>
     <h2>How to open console: (1) right click the page; (2) press inspect.</h2>
     <script>
-        var text = "#######";
+        var myString = "#######";
 
-        for (var i=0; i<7; i++){
-            text += `${text[i]} \n`;
+        for (var i=1; i<myString.length; i++){
+            console.log(myString.slice(0, i));
         }
 
-        console.log(text);
     </script>
 </body>
 </html>
