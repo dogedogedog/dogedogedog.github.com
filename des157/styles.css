@@ -1,15 +1,20 @@
 body {
     max-width: 1366px;
     min-width: 900px;
-    background-image: radial-gradient(#422619, black);
+    /* background-image: radial-gradient(closest-corner at 50% 17%, #422619, #2b1910, black); */
+    background-image: radial-gradient(closest-corner at 55% 19%, #0c0705e5, black);
+    /* background-color: #0c0705; */
     margin: auto;
     /* display: flexbox;
     align-content: center; */
 }
 
+/* titles */
+
 #name {
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     position: relative;
 }
 
@@ -38,10 +43,56 @@ body {
     color: #e4cfb9;
 }
 
+/* banner */
+
 #banner {
     width: 1100px;
     height: 250px;
+    background-image: url(pictures/film3.png);
+    background-size: 1100px 250px;
+    background-repeat: no-repeat;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    opacity: 60%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
+/* 
+#banner div{
+    align-items: center;
+} */
+
+#banner div:hover {
+    transform: perspective(1000px) rotateZ(3600deg);
+    transition: all 100s;
+}
+
+#reel1 img{
+    opacity: 100%;
+    width: 130px;
+}
+
+#reel2 img{
+    width: 105px;
+}
+
+#reel3 img{
+    width: 110px;
+}
+
+#reel4 img{
+    width: 125px;
+}
+
+/* the rest */
 
 #container {
     display: flex;
@@ -101,4 +152,5 @@ footer a {
     font-family: 'Passion One', cursive;
     letter-spacing: 5px;
     color: rgb(73, 52, 49);
+    margin-bottom: 50px;
 }
