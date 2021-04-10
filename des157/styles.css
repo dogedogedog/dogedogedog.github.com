@@ -48,13 +48,13 @@ body {
 #banner {
     width: 1100px;
     height: 250px;
-    background-image: url(pictures/film3.png);
+    background-image: url(pictures/film4.png);
     background-size: 1100px 250px;
     background-repeat: no-repeat;
-    border-top: 20px solid black;
-    border-bottom: 20px solid black;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
+    /* border-left: 20px solid black;
+    border-right: 20px solid black; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     opacity: 60%;
     margin-top: 100px;
     margin-left: auto;
