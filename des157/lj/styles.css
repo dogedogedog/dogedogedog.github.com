@@ -1,0 +1,87 @@
+/* set the maximum and minimum of the viewport */
+/* set the background color */
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    background-color: #0c0705e5;
+    margin: auto;
+}
+
+/* set header / banner in the middle */
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel Decorative', cursive;    
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #b4a18a;
+}
+
+/* make all the <article> posts flex in the middle of the page no matter how the viewport changed */
+#container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+
+    display: block;
+    width: 900px;
+}
+
+/* contents' style */
+
+/* h2: dates */
+h2 {
+    font-size: 20px;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 5px;
+    color: rgb(73, 52, 49);
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+/* h3: titles */
+h3 {
+    margin-top: 0%;
+    font-family:'Titillium Web', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #b4a18a;
+}
+
+/* p: general setting for both link and content */
+p {
+    font-size: 20px;
+    font-family:'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    color: #8f806e;
+    text-align: justify;
+    line-height: 35px;
+}
+
+#link a {
+    text-decoration: none;
+
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+footer a {
+    padding: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 5px;
+    color: rgb(73, 52, 49);
+    margin-bottom: 50px;
+}
