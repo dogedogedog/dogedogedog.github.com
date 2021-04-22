@@ -28,7 +28,7 @@ header {
 article {
 
     display: block;
-    width: 850px;
+    width: 700px;
 }
 
 /* contents' style */
@@ -62,9 +62,9 @@ p {
     line-height: 35px;
 }
 
-#link a {
-    text-decoration: none;
-
+p.link {
+    font-style: oblique;
+    color: #5f5548;
 }
 
 
