@@ -3,7 +3,7 @@
 body {
     max-width: 1366px;
     min-width: 900px;
-    background-color: #0c0705e5;
+    background-color: #0c0705f6;
     margin: auto;
 }
 
@@ -26,7 +26,7 @@ header {
 }
 
 article {
-
+    margin-top: 50px;
     display: block;
     width: 700px;
 }
@@ -74,6 +74,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-self: center;
+    padding-top: 50px;
 }
 
 footer a {
@@ -83,5 +84,5 @@ footer a {
     font-family: 'Passion One', cursive;
     letter-spacing: 5px;
     color: rgb(73, 52, 49);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
