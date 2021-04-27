@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+
+    <!-- print triangle of # on the page -->
+    <section id="output"></section>
+
+    <script>
+        // (1) promp asks for a number
+        // (2) the number will be the amount of #
+        // (3) after "submit", the user will see the triangle of #
+        function promptToUser (){
+            let num = prompt ("please enter a number", "");
+            return num;
+        };
+
+        function printOutput (num){
+            let myString = [];
+            output = document.getElementById("output");
+
+            if(! isNaN(num)){
+                for (let i=0; i<num; i++){
+                    myString.push("#");
+                    output.innerHTML=output.innerHTML + (myString.join("")) + "<br>";
+                }
+            } else {
+                output.innerHTML="Please try again and enter a number.";
+            }
+        };
+
+        let num = promptToUser();
+        printOutput(num);
+
+    </script>
+</body>
+</html>
