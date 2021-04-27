@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Mad Lib Script</title>
-    <script src="madlibscript.js" defer></script>
+    <title>Build Mad Libs Script</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-
-    <header>
-        <h1>Build a Mad Lib Script</h1>
-    </header>
-
     <main>
-
+        <h1>My Story About a Balloon</h1>
         <form id="myform">
-            <label for="noun1">Provide a Noun</label>
-            <input type="text" id="nuon1" required>
 
-            <label for="noun2">Provide another Noun</label>
-            <input type="text" id="nuon2" required>
+            <!-- 1 -->
+            <label for="mean">What does balloons mean to you?</label>
+            <select name="mean" id="mean">
+                <option value="empty">Choose one below</option>
+                <option value="Happiness">Happiness</option>
+                <option value="Nightmares">Nightmares</option>
+            </select>
+            <br>
 
-            <label for="adj1">Provide an Adjective</label>
-            <input type="text" id="adj1" required>
+            <!-- 2 -->
+            <label for="want">Do you want a balloon?</label>
+            <select name="want" id="want">
+                <option value="empty">Choose one below</option>
+                <option value="Yes">I really want a balloon</option>
+                <option value="No">I do not want a balloon</option>
+            </select>
+            <br>
 
-            <label for="verb1">Provide a Verb</label>
-            <input type="text" id="verb1" required>
+            <!-- 3 -->
+            <label for="balloon">Which balloon do you want?</label>
+            <select name="balloon" id="balloon">
+                <option value="empty">Choose one below</option>
+                <option value="ice-cream">ice-cream</option>
+                <option value="Starbucks">Starbucks frappuccino</option>
+                <option value="milktea">milktea with boba</option>
+            </select>
+            <br>
 
-            <input type="submit" value="Send">
+            <!-- 4 -->
+            <label for="like">Do you like a balloon?</label>
+            <select name="like" id="like">
+                <option value="empty">Choose one below</option>
+                <option value="Yes">I like it a lot!</option>
+                <option value="No">I hate it so bad.</option>
+            </select>
+            <br>
+
+            <!-- 5 -->
+            <label for="act">What will you do to a balloon?</label>
+            <select name="act" id="act">
+                <option value="empty">Choose one below</option>
+                <option value="hold">hold it forever</option>
+                <option value="blow">blow it up</option>
+            </select>
+            <br>
+
+            <input type="submit" value="Submit" class="open">
         </form>
 
-        <article id="madlib"></article>
-
+        <!-- <p>Click <a href="#" class="open">here</a> to open the overlay</p> -->
     </main>
 
-    <footer>
+    <section id="overlay" class="hidden">
+        <article id="madlib">
+            <!-- <h2>Overlay content here</h2> -->
+            <!-- <button class="tryagain">Try Again</button> -->
+        </article>
+    </section>
 
+    <footer>
+        <a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid CSS</a>
     </footer>
 
 </body>
+
 </html>
