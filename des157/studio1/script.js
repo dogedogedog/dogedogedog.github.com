@@ -2,28 +2,8 @@
 
     'use strict';
 
-    // open and close buttons
-    document.querySelector(".open").addEventListener("click", function(event){
-        event.preventDefault();
-        document.getElementById("overlay").className = "showing";
-    });
-    
-    // document.querySelector(".close").addEventListener("click", function(event){
-    //     event.preventDefault();
-    //     document.getElementById("overlay").className = "hidden";
-    // });
-
-    document.addEventListener("keydown", function(event){
-        if (event.key === "Escape"){
-            document.getElementById("overlay").className = "hidden";
-        }
-    });
-
     // (1) users select their options and submit the form
     const myForm = document.querySelector("#myform");
-
-    // (2) after users finish their selections and press submit, madlib section will put into action
-    const madlib = document.querySelector("#madlib");
 
     myForm.addEventListener("submit", function(event){
         event.preventDefault();

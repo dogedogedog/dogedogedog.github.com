@@ -7,79 +7,98 @@
     <title>Build Mad Libs Script</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Original+Surfer&display=swap" rel="stylesheet">
+
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
-<body>
-    <main>
-        <h1>My Story About a Balloon</h1>
-        <form id="myform">
+<div id="container">
+    <body>
+        <header>
+            <h1>My Story About a Balloon</h1>
+        </header>
 
-            <!-- 1 -->
-            <label for="mean">What does balloons mean to you?</label>
-            <select name="mean" id="mean">
-                <option value="empty">Choose one below</option>
-                <option value="Happiness">Happiness</option>
-                <option value="Nightmares">Nightmares</option>
-            </select>
-            <br>
+        <div images>
+            <div id="balloon"><img src="images/defaultballoons.png" alt="default balloons"></div>
+            <div id="character"><img src="images/default.png" alt="default character"></div>
+        </div>
 
-            <!-- 2 -->
-            <label for="want">Do you want a balloon?</label>
-            <select name="want" id="want">
-                <option value="empty">Choose one below</option>
-                <option value="Yes">I really want a balloon</option>
-                <option value="No">I do not want a balloon</option>
-            </select>
-            <br>
+        <main>
+            <form id="myform">
 
-            <!-- 3 -->
-            <label for="balloon">Which balloon do you want?</label>
-            <select name="balloon" id="balloon">
-                <option value="empty">Choose one below</option>
-                <option value="ice-cream">ice-cream</option>
-                <option value="Starbucks">Starbucks frappuccino</option>
-                <option value="milktea">milktea with boba</option>
-            </select>
-            <br>
+                <!-- 1 -->
+                <label for="mean">What does balloons mean to you?</label>
+                <br>
+                <select name="mean" id="mean">
+                    <option value="empty"></option>
+                    <option value="Happiness">Happiness</option>
+                    <option value="Nightmares">Nightmares</option>
+                </select>
+                <br>
 
-            <!-- 4 -->
-            <label for="like">Do you like a balloon?</label>
-            <select name="like" id="like">
-                <option value="empty">Choose one below</option>
-                <option value="Yes">I like it a lot!</option>
-                <option value="No">I hate it so bad.</option>
-            </select>
-            <br>
+                <!-- 2 -->
+                <label for="want">Do you want a balloon?</label>
+                <br>
+                <select name="want" id="want">
+                    <option value="empty"></option>
+                    <option value="Yes">I really want a balloon</option>
+                    <option value="No">I do not want a balloon</option>
+                </select>
+                <br>
 
-            <!-- 5 -->
-            <label for="act">What will you do to a balloon?</label>
-            <select name="act" id="act">
-                <option value="empty">Choose one below</option>
-                <option value="hold">hold it forever</option>
-                <option value="blow">blow it up</option>
-            </select>
-            <br>
+                <!-- 3 -->
+                <label for="balloon">Which balloon do you want?</label>
+                <br>
+                <select name="balloon" id="balloon">
+                    <option value="empty"></option>
+                    <option value="ice-cream">ice-cream</option>
+                    <option value="Starbucks">Starbucks frappuccino</option>
+                    <option value="milktea">milktea with boba</option>
+                </select>
+                <br>
 
-            <input type="submit" value="Submit" class="open">
-        </form>
+                <!-- 4 -->
+                <label for="like">Do you like a balloon?</label>
+                <br>
+                <select name="like" id="like">
+                    <option value="empty"></option>
+                    <option value="Yes">I like it a lot!</option>
+                    <option value="No">I hate it so bad.</option>
+                </select>
+                <br>
 
-        <!-- <p>Click <a href="#" class="open">here</a> to open the overlay</p> -->
-    </main>
+                <!-- 5 -->
+                <label for="act">What will you do to a balloon?</label>
+                <br>
+                <select name="act" id="act">
+                    <option value="empty"></option>
+                    <option value="hold">hold it forever</option>
+                    <option value="blow">blow it up</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Read My Story" class="open">
+            </form>
 
-    <section id="overlay" class="hidden">
-        <article id="madlib">
-            <!-- <h2>Overlay content here</h2> -->
-            <!-- <button class="tryagain">Try Again</button> -->
-        </article>
-    </section>
+        </main>
 
-    <footer>
-        <a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid HTML 5</a>
-        <a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid CSS</a>
-    </footer>
+        <!-- idea: by clicking submit button, the result will show on overlay -->
+        <!-- idea2: if JS script can work to directly replace the form section, then the overlay is unnecessary -->
+        <!-- <section id="overlay" class="hidden">
+            <article id="madlib">
+                <h2>Overlay content here</h2>
+                <button class="tryagain">Try Again</button>
+            </article>
+        </section> -->
 
-</body>
+        <footer>
+            <a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid HTML 5</a>
+            <a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid CSS</a>
+        </footer>
+    </body>
+</div>
 
 </html>
