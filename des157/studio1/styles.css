@@ -1,12 +1,23 @@
+
+body {
+    background-color: rgb(247, 235, 224);
+}
+
 .container {
-    background-color: rgb(255, 252, 249);
     display: flex;
+    margin-top: auto;
+    max-width: 1366px;
+    min-width: 900px;
 
 }
 
-header {
-    flex: 100%;
+.sth {
+    flex: 50%;
+}
 
+header {
+    flex: 50%;
+    margin-top: 50px;
     font-family: 'Original Surfer', cursive;
     color: #2fc0f9;
     
@@ -20,21 +31,70 @@ main {
 
 #images {
     flex: 50%;
+    text-align: center;
+    position: relative;
 }
 
 img {
-    width: 30%;
+    width: 150px;
+}
+
+/* single balloon image style */
+#blIcecream img, #blMilktea img, #blStarbucks img{
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    left: 25%;
+}
+
+/* multiple balloons image style */
+#defaultBalloon img, #blowup img, #gift img {
+    width: 200px;
+    position: absolute;
+    z-index: 0;
+    top: -10%;
+    left: 55%;
+}
+
+/* character image style */
+/* #defaultCharacter img, #characterSmile img, #characterSad img {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 35%;
+} */
+
+#defaultCharacter img {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 35%;
+}
+
+#characterSmile img, #characterSad img {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 33%;
 }
 
 .hidden {
     display: none;
 }
 
+#myform {
+    max-width: 400px;
+}
+
 /* forms' style */
 label {
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
-    color: rgb(151, 149, 149);
+    color: rgb(99, 98, 98);
     padding-left: 8px;
 }
 
@@ -44,30 +104,55 @@ select {
     padding: 4px;
     border: none;
     border-radius: 4px;
-    background-color: rgb(235, 235, 237);
+    background-color: rgb(193, 209, 233);
     font-family: 'Comfortaa', cursive;
-    color: rgb(151, 149, 149);
+    color: rgb(112, 112, 112);
 }
 
 /* button */
 .open {
     font-family: 'Original Surfer', cursive;
-    font-size: 16px;
+    font-size: 20px;
     width: 50%;
     margin: 8px;
     padding: 6px;
-    color: #ffffff;
-    background-color: #74d5fc;
-    border-radius: 5px;
+    color: #0cb3f5;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+}
 
+.tryAgain {
+    font-family: 'Original Surfer', cursive;
+    font-size: 16px;
+    width: 30%;
+    margin: 8px;
+    padding: 6px;
+    color: #0cb3f5;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+}
+
+/* user's story style */
+article {
+    font-family: 'Comfortaa', cursive;
+    font-size: larger;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(151, 149, 149);
+    width: 500px;
 }
 
 footer {
-    flex: 100%;
+    margin-top: 8px;
+    flex: 50%;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     font-family: 'Comfortaa', cursive;
-
+    font-size: small;
+    color: rgb(151, 149, 149);
+    padding-left: 3%;
+    
 }

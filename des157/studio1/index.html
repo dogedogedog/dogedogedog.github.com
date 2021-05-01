@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Mad Libs Script</title>
+    <title>Balloon Mad Libs</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- google fonts -->
@@ -17,17 +17,33 @@
 
 <body>
     <div class="container">
+        <div class="sth"></div>
         <header>
-            <h1>My Story About a Balloon</h1>
+            <h1>My Story About Balloons</h1>
         </header>
     </div>
 
     <div class="container">
-        <div images>
-            <div id="balloon"><img src="images/defaultballoons.png" alt="default balloons"></div>
-            <div id="character"><img src="images/default.png" alt="default character"></div>
+        <div id="images">
+            <!-- default images -->
+            <div id="defaultBalloon"><img src="images/defaultballoons.png" alt="default balloons"></div>
+            <div id="defaultCharacter"><img src="images/default.png" alt="default character"></div>
 
+            <!-- options with different images -->
+
+            <!-- like characters -->
             <div id="characterSmile" class="hidden"><img src="images/smile.png" alt="smile character"></div>
+            <div id="characterSad" class="hidden"><img src="images/sad.png" alt="sad character"></div>
+
+            <!-- balloon balloons -->
+            <div id="blIcecream" class="hidden"><img src="images/icecream.png" alt="ice-cream balloon"></div>
+            <div id="blMilktea" class="hidden"><img src="images/milktea.png" alt="milktea balloon"></div>
+            <div id="blStarbucks" class="hidden"><img src="images/starbucks.png" alt="starbucks balloon"></div>
+
+            <!-- act default balloons -->
+            <div id="blowup" class="hidden"><img src="images/blowup.png" alt="blowup balloons"></div>
+            <div id="gift" class="hidden"><img src="images/gift.png" alt="gift balloons"></div>
+
         </div>
 
         <main>
@@ -38,8 +54,8 @@
                 <br>
                 <select name="mean" id="mean">
                     <option value="empty"></option>
-                    <option value="Happiness">Happiness</option>
-                    <option value="Nightmares">Nightmares</option>
+                    <option value="happiness. It dances with the fresh breeze in the sky, performing the best show you could ever see.">Happiness :)</option>
+                    <option value="nightmares. It is so vulnerable that could scare me at any time with loud bursting sound.">Nightmares X(</option>
                 </select>
                 <br>
 
@@ -48,39 +64,39 @@
                 <br>
                 <select name="want" id="want">
                     <option value="empty"></option>
-                    <option value="Yes">I really want a balloon</option>
-                    <option value="No">I do not want a balloon</option>
+                    <option value="I've been looking forward to having my own balloon">I really want one!</option>
+                    <option value="I've been asking God to keep me away from balloons">I don't want any balloon!</option>
                 </select>
                 <br>
 
                 <!-- 3 -->
-                <label for="balloon">Which balloon do you want?</label>
+                <label for="balloon">Which balloon could be yours?</label>
                 <br>
                 <select name="balloon" id="balloon">
                     <option value="empty"></option>
-                    <option value="ice-cream">ice-cream</option>
-                    <option value="Starbucks">Starbucks frappuccino</option>
-                    <option value="milktea">milktea with boba</option>
+                    <option value="a passion fruit flavored ice-cream">ice-cream</option>
+                    <option value="my favorite Starbucks frappuccino">Starbucks frappuccino</option>
+                    <option value="a cup of milktea with boba">milktea with boba</option>
                 </select>
                 <br>
 
                 <!-- 4 -->
-                <label for="like">Do you like a balloon?</label>
+                <label for="like">Do you like balloons?</label>
                 <br>
                 <select name="like" id="like">
                     <option value="empty"></option>
-                    <option value="Yes">I like it a lot!</option>
-                    <option value="No">I hate it so bad.</option>
+                    <option value="I loved so much.">I like it a lot!</option>
+                    <option value="I hated so bad.">I hate it so bad.</option>
                 </select>
                 <br>
 
                 <!-- 5 -->
-                <label for="act">What will you do to a balloon?</label>
+                <label for="act">What will you do to balloons?</label>
                 <br>
                 <select name="act" id="act">
                     <option value="empty"></option>
-                    <option value="hold">hold it forever</option>
-                    <option value="blow">blow it up</option>
+                    <option value="sned them to who I love?">make them into gifts</option>
+                    <option value="blow them up?">blow them up</option>
                 </select>
                 <br>
                 <br>
@@ -90,13 +106,14 @@
             <!-- after submit the form: -->
             <article id="madlib"></article>
             <form action="index.html" id="tryagain" class="hidden">
-                <input type="submit" value="Try Again!">
+                <input type="submit" value="Try Again!" class="tryAgain">
             </form>
 
         </main>
     </div>
 
     <div class="container">
+        <div class="sth"></div>
         <footer>
             <a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid HTML 5</a>
             <a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/studio1/index.html">Valid CSS</a>
