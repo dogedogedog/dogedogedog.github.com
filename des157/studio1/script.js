@@ -23,7 +23,7 @@
         }
 
         const balloon = document.querySelector("#balloon").value;
-        if (balloon === "ice-a passion fruit flavored ice-cream"){
+        if (balloon === "a passion fruit flavored ice-cream"){
             const icecream = document.querySelector("#blIcecream");
 
             icecream.className = "";
