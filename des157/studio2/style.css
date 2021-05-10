@@ -119,78 +119,14 @@ a {
     right: 0;
 }
 
-/* hover effect */
-.start {
-    width:800px;
-    left: 0;
-    top: 0;
-}
-
+/* when hover over the div blocks over each picture: */
+/* (1) a frame shows up */
+/* (2) the cursor turns into "?" */
+/* (3) when user clicks, overlay shows up */
 .topOne, .topTwo, .topThree, .topFour, .topFive,
 .bottomOne, .bottomTwo, .bottomThree, .bottomFour, .bottomFive, .bottomSix, .bottomSeven:hover {
     cursor: help;
-    width: 1366px;
-}
-
-.topOne {
-    top: 0;
-    left: 0;
-}
-
-.topTwo {
-    top: 0;
-    left: 273px;
-}
-
-.topThree {
-    top: 0;
-    left: 546px;
-}
-
-.topFour {
-    top: 0;
-    left: 820px;
-}
-
-.topFive {
-    top: 0;
-    left: 1093px;
-}
-
-/* bottom pictures */
-.bottomOne {
-    bottom: 0;
-    left: 0;
-}
-
-.bottomTwo {
-    bottom: 0;
-    left: 137px;
-}
-
-.bottomThree {
-    bottom: 0;
-    left: 273px;
-}
-
-.bottomFour {
-    bottom: 0;
-    left: 683px;
-}
-
-.bottomFive {
-    bottom: 0;
-    left: 956px;
-}
-
-.bottomSix {
-    bottom: 0;
-    left: 1161px;
-}
-
-.bottomSeven {
-    bottom: 0;
-    left: 1358px;
+    
 }
 
 /* overlay setting */
