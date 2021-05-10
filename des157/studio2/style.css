@@ -1,0 +1,218 @@
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    margin: auto;
+    background-color: #d6c0b0;
+    text-align: center;
+}
+/* 
+.container {
+    position: relative;
+} */
+
+/* header & footer (content on the center of the page) */
+header, footer {
+    font-family: 'Reenie Beanie', cursive;
+    color: black;
+    margin: auto;
+    z-index: 0;
+}
+
+a {
+    text-decoration: underline;
+    font-size: small;
+}
+
+/* picture with blocks over it */
+#bg {
+    overflow: hidden;
+    width: 1399px;
+    height: 768px;
+    position: relative;
+    margin: auto;
+    z-index: -1;
+}
+
+#bg div{
+    position: absolute;
+    width: 150px; 
+    height: 150px;
+}
+
+#bg img {
+    display: block;
+    position: absolute;
+}
+
+/* set up blocks' positions */
+/* top pictures */
+#topOne {
+    top: 0;
+    left: 0;
+}
+
+#topTwo {
+    top: 0;
+    left: 20%;
+}
+
+#topThree {
+    top: 0;
+    left: 40%;
+}
+
+#topFour {
+    top: 0;
+    left: 60%;
+}
+
+#topFive {
+    top: 0;
+    left: 80%;
+}
+
+/* bottom pictures */
+#bottomOne {
+    bottom: 0;
+    left: 0;
+}
+
+#bottomTwo {
+    bottom: 0;
+    left: 10%;
+}
+
+#bottomThree {
+    bottom: 0;
+    left: 20%;
+}
+
+#bottomFour {
+    bottom: 0;
+    left: 50%;
+}
+
+#bottomFive {
+    bottom: 0;
+    left: 70%;
+}
+
+#bottomSix {
+    bottom: 0;
+    left: 85%;
+}
+
+#bottomSeven {
+    bottom: 0;
+    right: 0;
+}
+
+/* hover effect */
+.start {
+    width:800px;
+    left: 0;
+    top: 0;
+}
+
+.topOne, .topTwo, .topThree, .topFour, .topFive,
+.bottomOne, .bottomTwo, .bottomThree, .bottomFour, .bottomFive, .bottomSix, .bottomSeven:hover {
+    cursor: help;
+    width: 1366px;
+}
+
+.topOne {
+    top: 0;
+    left: 0;
+}
+
+.topTwo {
+    top: 0;
+    left: 273px;
+}
+
+.topThree {
+    top: 0;
+    left: 546px;
+}
+
+.topFour {
+    top: 0;
+    left: 820px;
+}
+
+.topFive {
+    top: 0;
+    left: 1093px;
+}
+
+/* bottom pictures */
+.bottomOne {
+    bottom: 0;
+    left: 0;
+}
+
+.bottomTwo {
+    bottom: 0;
+    left: 137px;
+}
+
+.bottomThree {
+    bottom: 0;
+    left: 273px;
+}
+
+.bottomFour {
+    bottom: 0;
+    left: 683px;
+}
+
+.bottomFive {
+    bottom: 0;
+    left: 956px;
+}
+
+.bottomSix {
+    bottom: 0;
+    left: 1161px;
+}
+
+.bottomSeven {
+    bottom: 0;
+    left: 1358px;
+}
+
+/* overlay setting */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.overlay article {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
