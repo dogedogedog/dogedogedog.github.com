@@ -13,10 +13,22 @@ body {
 /* header & footer (content on the center of the page) */
 header, footer {
     font-family: 'Reenie Beanie', cursive;
-    color: black;
-    margin: auto;
+    color: rgb(121, 95, 57);
+    position: absolute;
+    left: 50%;
+    top: 50%;
     z-index: 0;
     text-align: center;
+}
+
+header {
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+
+}
+
+footer {
+    transform: translate(-50%, 80%);
 }
 
 footer ul {
@@ -31,8 +43,9 @@ footer ul li{
 }
 
 a {
-    color: black;
+    color: rgb(121, 95, 57);
     text-decoration: underline;
+    font-size: 30px;
 }
 
 /* picture with blocks over it */
@@ -123,8 +136,8 @@ a {
 /* (1) a frame shows up */
 /* (2) the cursor turns into "?" */
 /* (3) when user clicks, overlay shows up */
-.topOne, .topTwo, .topThree, .topFour, .topFive,
-.bottomOne, .bottomTwo, .bottomThree, .bottomFour, .bottomFive, .bottomSix, .bottomSeven:hover {
+.topOne:hover, .topTwo:hover, .topThree:hover, .topFour:hover, .topFive:hover,
+.bottomOne:hover, .bottomTwo:hover, .bottomThree:hover, .bottomFour:hover, .bottomFive:hover, .bottomSix:hover, .bottomSeven:hover {
     cursor: help;
     
 }
