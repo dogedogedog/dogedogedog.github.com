@@ -16,11 +16,23 @@ header, footer {
     color: black;
     margin: auto;
     z-index: 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    align-items: center;
+}
+
+footer ul li{
+    width: auto;
+    display: inline;
+    padding: 10px;
 }
 
 a {
+    color: black;
     text-decoration: underline;
-    font-size: small;
 }
 
 /* picture with blocks over it */
