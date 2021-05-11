@@ -9,7 +9,7 @@
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Reenie+Beanie&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
@@ -18,10 +18,11 @@
 <body>
 
     <main>
-    <!-- set up blocks over each small piece of image: -->
-    <!-- when user's mouse hover on the blocks,  -->
-    <!-- (1) cursor hints "something is here" -->
-    <!-- (2) click: show overlay journal -->
+
+        <!-- set up blocks over each small piece of image: -->
+        <!-- when user's mouse hover on the blocks,  -->
+        <!-- (1) cursor hints "something is here" -->
+        <!-- (2) click: show overlay journal -->
         <div id="bg">
             <img src="images/bg.jpg" alt="background" class="start">
             <div id="topOne" class="open"></div>
@@ -38,127 +39,144 @@
             <div id="bottomSeven" class="open"></div>
         </div>
 
-        <header>
-            <h1>Xinlei Li's Memory Collection</h1>
-        </header>
+        <div id="wrap">
+            <header>
+                <h1>Xinlei Li's Memory Collection</h1>
+            </header>
 
-        <footer>
-            <ul>
-                <li><a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/studio2/index.html">Valid HTML5</a></li>
-                <li><a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/studio2/style.css">Valid CSS</a></li>
-            </ul>
-        </footer>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#" class="open" id="story">What's this page about?</a>
+                    </li>
+                    <li><a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/studio2/index.html">Valid HTML5</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/studio2/style.css">Valid CSS</a></li>
+                </ul>
+            </footer>
+        </div>
 
+        <!-- overlay contents: -->
+        <section id="ol-story" class="overlay hidden">
+            <article>
+                <div id="slide"><img src="images/slide1.jpg" alt="slide images" id="myimage"></div>
+                <button id="previous">←</button> 
+                <button id="next">→</button>
+                <p>I don't like my handwriting and drawing, so I collect all kinds of things (tickets, table paper, napkins, candy wrappers, etc.) and make them into my scrapbook as my journal. When my friends come to visit me, I always share my traveling stories with them by looking at what I have collected inside my book. <br><br> Click different images and see the story behind them.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-topOne" class="overlay hidden">
+            <article>
+                <img src="images/fr-eonjoo.jpg" alt="eonjoo">
+                <figcaption>March 2018 in Boston with Eon-Joo Jang</figcaption>
+                <p>"We should meet each other at least once a year." And then we have never met again. :(</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-topTwo" class="overlay hidden">
+            <article>
+                <img src="images/so-italy.jpg" alt="italy">
+                <figcaption>September 2018 in Florence, Italy: where I stayed</figcaption>
+                <p>On July 2nd, 2018, I didn't bring all the documents to the visa officer at the Italian Embassy. I thought I could not start my quarter abroad program, but the officer wrote me what to do in details, explained everything to me extremely patiently, and waited me until I had collected everything. This was the beginning of my unforgettable journey.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-topThree" class="overlay hidden">
+            <article>
+                <img src="images/so-sydney.jpg" alt="sydney">
+                <figcaption>August 11, 2018 in Beijing, China with Lejia (Sydney) Hu</figcaption>
+                <p>Sydney and I were like a daughter and a mother in high school because I took a lot of care of her. She invited me to her favorite singer's concert, and that was the first time we met after graduating from high school.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-topFour" class="overlay hidden">
+            <article>
+                <img src="images/so-ceci.jpg" alt="ceci">
+                <figcaption>October 18, 2018 in Pompei, Italy with Ceci</figcaption>
+                <p>Ceci is older and a little bit shorter than me, but she always wants to protect and help me because she thinks I'm so little LOL.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-topFive" class="overlay hidden">
+            <article>
+                <img src="images/so-class.JPG" alt="classmates">
+                <figcaption>Last day of the quarer abroad program: December 13, 2018 at the Ponte Vecchio in Florence, Italy</figcaption>
+                <p>All good things must come to an end.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomOne" class="overlay hidden">
+            <article>
+                <img src="images/fr-cousin.jpg" alt="cousin">
+                <figcaption>May 2018 with my cousin Carol</figcaption>
+                <p>I usually call her "my sister". She studies design in LA. She is the only relative I know here. We have nothing in common, but we still love each other.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomTwo" class="overlay hidden">
+            <article>
+                <img src="images/fr-dorm.jpg" alt="dorm">
+                <figcaption>June 2018 at Bixby</figcaption>
+                <p>Farewell, Dormitory.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomThree" class="overlay hidden">
+            <article>
+                <img src="images/fr-olivia.JPG" alt="olivia">
+                <figcaption>June 4, 2018 at Bixby with Olivia Lou</figcaption>
+                <p>Olivia is my high school "daughter" Sydney's best friend, and now she became my best friend in college. She lived right below me. I don't know what my first year will be like without her XD.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomFour" class="overlay hidden">
+            <article>
+                <img src="images/jr-alaska.JPG" alt="alaska">
+                <figcaption>December, 2019 in Alaska</figcaption>
+                <p>Endless Winter</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomFive" class="overlay hidden">
+            <article>
+                <img src="images/jr-seattle.jpg" alt="seattle">
+                <figcaption>March 2019 in Seattle with Tracy and Jiajia</figcaption>
+                <p>Tracy and Jiajia are from Davis Chinese Dance team. I have taken thousands of photos for them. We like to explore all kinds of foods around the campus. They care about me a lot.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomSix" class="overlay hidden">
+            <article>
+                <img src="images/sr-apt.JPG" alt="apartment">
+                <figcaption>June 2021 in Davis: Move Out</figcaption>
+                <p>Farewell, Davis.</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+
+        <section id="ol-bottomSeven" class="overlay hidden">
+            <article>
+                <img src="images/sr-meng.JPG" alt="mengmeng">
+                <figcaption>November 27, 2020 at UC Davis with Mengmeng Luo</figcaption>
+                <p>We lived on the same floor during our freshman year, and we became close friends in our last year at UC Davis. How fun!</p>
+                <button class="close">×</button>
+            </article>
+        </section>
+        
     </main>
 
-    <!-- overlay contents: -->
-    <section id="ol-topOne" class="overlay hidden">
-        <article>
-            <img src="images/fr-eonjoo.jpg" alt="eonjoo">
-            <figcaption>March 2018 in Boston with my high school best friend Eon-Joo Jang</figcaption>
-            <p>"We should meet each other at least once a year." And then we have never met again. :(</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-topTwo" class="overlay hidden">
-        <article>
-            <img src="images/so-italy.jpg" alt="italy">
-            <figcaption>September 2018 in Florence, Italy: where I stayed</figcaption>
-            <p>On July 2nd, 2018, I didn't bring all the documents to the visa officer at the Italian Embassy. I thought I could not start my quarter abroad program, but the officer wrote me what to do in details, explained everything to me extremely patiently, and waited me until I had collected everything. This was the beginning of my unforgettable journey.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-topThree" class="overlay hidden">
-        <article>
-            <img src="images/so-sydney.jpg" alt="sydney">
-            <figcaption>August 11, 2018 in Beijing, China with Lejia (Sydney) Hu</figcaption>
-            <p>Sydney and I were like a daughter and a mother in high school because I took a lot of care of her. She invited me to her favorite singer's concert, and that was the first time we met after graduating from high school.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-topFour" class="overlay hidden">
-        <article>
-            <img src="images/so-ceci.jpg" alt="ceci">
-            <figcaption>October 18, 2018 in Pompei, Italy with Ceci</figcaption>
-            <p>Ceci is older and a little bit shorter than me, but she always wants to protect and help me because she thinks I'm so little LOL.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-topFive" class="overlay hidden">
-        <article>
-            <img src="images/so-class.JPG" alt="classmates">
-            <figcaption>Last day of the quarer abroad program: December 13, 2018 at the Ponte Vecchio in Florence, Italy</figcaption>
-            <p>All good things must come to an end.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomOne" class="overlay hidden">
-        <article>
-            <img src="images/fr-cousin.jpg" alt="cousin">
-            <figcaption>May 2018 with my cousin Carol</figcaption>
-            <p>I usually call her "my sister". She studies design in LA. She is the only relative I know here. We have nothing in common, but we still love each other.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomTwo" class="overlay hidden">
-        <article>
-            <img src="images/fr-dorm.jpg" alt="dorm">
-            <figcaption>June 2018 at Bixby</figcaption>
-            <p>Farewell, Dormitory.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomThree" class="overlay hidden">
-        <article>
-            <img src="images/fr-olivia.JPG" alt="olivia">
-            <figcaption>June 4, 2018 at Bixby with Olivia Lou</figcaption>
-            <p>Olivia is my high school "daughter" Sydney's best friend, and now she became my best friend in college. She lived right below me. I don't know what my first year will be like without her XD.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomFour" class="overlay hidden">
-        <article>
-            <img src="images/jr-alaska.JPG" alt="alaska">
-            <figcaption>December, 2019 in Alaska</figcaption>
-            <p>Endless Winter</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomFive" class="overlay hidden">
-        <article>
-            <img src="images/jr-seattle.jpg" alt="seattle">
-            <figcaption>March 2019 in Seattle with Tracy and Jiajia</figcaption>
-            <p>Tracy and Jiajia are from Davis Chinese Dance team. I have taken thousands of photos for them. We like to explore all kinds of foods around the campus. They care about me a lot.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomSix" class="overlay hidden">
-        <article>
-            <img src="images/sr-apt.JPG" alt="apartment">
-            <figcaption>June 2021 in Davis: Move Out</figcaption>
-            <p>Farewell, Davis.</p>
-            <button class="close">close</button>
-        </article>
-    </section>
-
-    <section id="ol-bottomSeven" class="overlay hidden">
-        <article>
-            <img src="images/sr-meng.JPG" alt="mengmeng">
-            <figcaption>November 27, 2020 at UC Davis with Mengmeng Luo</figcaption>
-            <p>We lived on the same floor during our freshman year, and we became close friends in our last year at UC Davis. How fun!</p>
-            <button class="close">close</button>
-        </article>
-    </section>
+    
 
 </body>
 </html>
