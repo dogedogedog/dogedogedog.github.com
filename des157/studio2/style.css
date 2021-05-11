@@ -145,7 +145,7 @@ footer #story {
 /* (3) when user clicks, overlay shows up */
 #topOne:hover, #topTwo:hover, #topThree:hover, #topFour:hover, #topFive:hover,
 #bottomOne:hover, #bottomTwo:hover, #bottomThree:hover, #bottomFour:hover, #bottomFive:hover, #bottomSix:hover, #bottomSeven:hover {
-    cursor: url("images/cursor.png"), 50px 50px;
+    cursor: url("images/cursor.png"), auto;
 }
 
 /* overlay setting */
