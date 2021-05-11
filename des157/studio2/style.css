@@ -17,7 +17,7 @@ header, footer {
     position: absolute;
     left: 50%;
     top: 50%;
-    z-index: 0;
+    /* z-index: 0; */
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ a {
     height: 768px;
     position: relative;
     margin: auto;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #bg div{
@@ -136,8 +136,8 @@ a {
 /* (1) a frame shows up */
 /* (2) the cursor turns into "?" */
 /* (3) when user clicks, overlay shows up */
-.topOne:hover, .topTwo:hover, .topThree:hover, .topFour:hover, .topFive:hover,
-.bottomOne:hover, .bottomTwo:hover, .bottomThree:hover, .bottomFour:hover, .bottomFive:hover, .bottomSix:hover, .bottomSeven:hover {
+#topOne:hover, #topTwo:hover, #topThree:hover, #topFour:hover, #topFive:hover,
+#bottomOne:hover, #bottomTwo:hover, #bottomThree:hover, #bottomFour:hover, #bottomFive:hover, #bottomSix:hover, #bottomSeven:hover {
     cursor: help;
     
 }
