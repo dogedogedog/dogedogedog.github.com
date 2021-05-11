@@ -67,8 +67,8 @@ footer #story {
 
 #bg div{
     position: absolute;
-    width: 150px; 
-    height: 150px;
+    width: 160px; 
+    height: 160px;
 }
 
 #bg img {
@@ -145,8 +145,7 @@ footer #story {
 /* (3) when user clicks, overlay shows up */
 #topOne:hover, #topTwo:hover, #topThree:hover, #topFour:hover, #topFive:hover,
 #bottomOne:hover, #bottomTwo:hover, #bottomThree:hover, #bottomFour:hover, #bottomFive:hover, #bottomSix:hover, #bottomSeven:hover {
-    cursor: help;
-    
+    cursor: url("images/cursor.png"), 50px 50px;
 }
 
 /* overlay setting */
@@ -231,7 +230,7 @@ footer #story {
 #previous {
     position: fixed;
     left: 100px;
-    top: 400px;
+    top: 230px;
     background-color: none;
     border: solid rgba(0, 0, 0, 0.322);
     border-radius: 100px;
@@ -241,7 +240,7 @@ footer #story {
 #next {
     position: fixed;
     right: 100px;
-    top: 400px;
+    top: 230px;
     background-color: none;
     border: solid rgba(0, 0, 0, 0.322);
     border-radius: 100px;
