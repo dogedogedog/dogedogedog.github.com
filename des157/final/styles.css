@@ -1,0 +1,31 @@
+#wrap {
+    margin: auto;
+    max-width: 1366px;
+    min-width: 1100px;
+    padding: 100px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#left, #right {
+    width: 400px;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
