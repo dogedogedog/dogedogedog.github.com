@@ -1,0 +1,23 @@
+/* container position: relative to the viewport */
+/* buttons, players, numbers, message of points status' position: absolute to the container */
+#wrap {
+    max-width: 1366px;
+    min-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+

@@ -98,31 +98,32 @@ figcaption {
 
 /* h2: dates */
 h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Passion One', cursive;
     letter-spacing: 5px;
     color: rgb(73, 52, 49);
     padding-bottom: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 10px;
 }
 
 /* h3: titles */
 h3 {
     margin-top: 0%;
     font-family:'Titillium Web', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 57px;
     letter-spacing: 2px;
     color: #b4a18a;
 }
 
 /* p: general setting for both link and content */
 p {
-    font-size: 20px;
+    font-size: 25px;
     font-family:'Titillium Web', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     color: rgb(161, 153, 144);
     text-align: justify;
-    line-height: 35px;
+    line-height: 42px;
 }
 
 p.link {
