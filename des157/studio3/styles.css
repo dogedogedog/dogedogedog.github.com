@@ -3,13 +3,50 @@
 #wrap {
     max-width: 1366px;
     min-width: 1200px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(75, 75, 75);
+}
+
+header p {
+    padding: 20px;
+    background-color: black;
+    color: rgb(218, 218, 218);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+button {
+    display: inline-block;
+    padding: 15px;
+    /* font-size: 24px; */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px #999;
+}
+
+#rollagain, #pass {
+    font-size: 20px;
 }
 
 header {
     text-align: center;
+    font-family: 'Reggae One', cursive;
+}
+
+header h1 {
+    font-size: 90px;
 }
 
 #container {
@@ -19,8 +56,61 @@ header {
     align-items: center;
 }
 
+.center {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.left, .right, .center {
+    text-align: center;
+    font-family: 'Reggae One', cursive;
+}
+
+.left {
+    width: 300px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 25px 30px red;
+    color: red;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.right {
+    color: rgb(200, 200, 0);
+    font-size: 20px;
+    width: 300px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 25px 30px yellow;
+    background-color: rgb(255, 255, 255);
+}
+
+#score1, #score2 {
+    font-size: 30px;
+}
+
+#actions {
+    font-size: 30px;
+}
+
+#game img {
+    width: 150px;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: black;
+}
+
 footer ul {
     list-style-type: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(218, 218, 218);
 }
 
 #footerWrap {

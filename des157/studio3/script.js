@@ -7,17 +7,18 @@ const game = document.getElementById( 'game' );
 const score1 = document.getElementById( 'score1' );
 const score2 = document.getElementById( 'score2' );
 const actionArea = document.getElementById( 'actions' );
+// const myMusic;
 
 let gameData = {
     dice: [
-        'images/1die.jpg',
-        'images/2die.jpg',
-        'images/3die.jpg',
-        'images/4die.jpg',
-        'images/5die.jpg',
-        'images/6die.jpg'
+        'images/1die.png',
+        'images/2die.png',
+        'images/3die.png',
+        'images/4die.png',
+        'images/5die.png',
+        'images/6die.png'
     ],
-    players: ['FIRE', 'SHINING'],
+    players: ['FIRE PIG', 'SHINING PIG'],
     score: [0, 0],
     roll1: 0,
     roll2: 0,
@@ -30,6 +31,8 @@ startGame.addEventListener('click', function(){
     gameData.index = Math.round(Math.random());
     gameControl.innerHTML = '';
     gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
+
+    // myMusic = new sound("media/background.mp3");
 
     document.getElementById('quit').addEventListener('click', function(){
         location.reload();
@@ -48,16 +51,14 @@ function setUpTurn() {
 
 function throwDice(){
     actionArea.innerHTML = '';
-    gameData.roll1 = Math.floor( Math.random() * 6 )+1;
-    gameData.roll2 = Math.floor( Math.random() * 6 )+1;
+    gameData.roll1 = Math.floor(Math.random() * 6) + 1;
+    gameData.roll2 = Math.floor(Math.random() * 6) + 1;
     game.innerHTML = `<p>It's ${gameData.players[gameData.index]}'s turn.</p>`;
-    game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"><img src="${gameData.dice[gameData.roll2-1]}">`;
+    game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"><br><img src="${gameData.dice[gameData.roll2-1]}">`;
     gameData.rollSum = gameData.roll1 + gameData.roll2;
-    console.log(gameData);
 
     if( gameData.rollSum === 2 ){
-        console.log("Snake Eyes!");
-
+        
         game.innerHTML += `<p>Snake Eyes!</p>`;
         gameData.score[gameData.index] = 0;
         gameData.index ? (gameData.index = 0): (gameData.index = 1);
@@ -66,16 +67,16 @@ function throwDice(){
         setTimeout(setUpTurn, 2000);
         
     } else if ( gameData.roll1 === 1 || gameData.roll2 === 1) {
-        console.log("A one was rolled");
+
         gameData.index ? (gameData.index = 0): (gameData.index = 1);
         game.innerHTML += `<p>One! A Miss Punch! Switching to ${gameData.players[gameData.index]}</p>`;
         setTimeout(setUpTurn, 2000);
     } else {
         gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-        actionArea.innerHTML = '<button id="rollagain">Throw A Punch!</button> or <button id="pass">Defense</button>';
+        actionArea.innerHTML = '<button id="rollagain">Punch!</button> or <button id="pass">Defense</button>';
 
         document.getElementById('rollagain').addEventListener('click', function(){
-            throwDice();
+            setUpTurn();
         });
 
         document.getElementById('pass').addEventListener('click', function(){
@@ -89,18 +90,20 @@ function throwDice(){
 
 function checkWinningCondition(){
     if (gameData.score[gameData.index] > gameData.gameEnd){
-        score.innerHTML = `<h2>${gameData.players[gameData.index]} Wins!!</h2>`;
-
         actionArea.innerHTML = "";
+        actionArea.innerHTML += `<h2>${gameData.players[gameData.index]} Wins!!</h2>`;
+
+        showCurrentScore();
         document.getElementById('quit').innerHTML = "Start a New Game";
+        
     } else {
         showCurrentScore();
     }
 }
 
 function showCurrentScore(){
-    score1.innerHTML = `<p>${gameData.score[0]}</p>`;
-    score2.innerHTML = `<p>${gameData.score[1]}</p>`;
+    score1.innerHTML = `<p>Points: ${gameData.score[0]}</p>`;
+    score2.innerHTML = `<p>Points: ${gameData.score[1]}</p>`;
 }
 
 // overlay
