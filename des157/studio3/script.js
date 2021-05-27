@@ -7,7 +7,9 @@ const game = document.getElementById( 'game' );
 const score1 = document.getElementById( 'score1' );
 const score2 = document.getElementById( 'score2' );
 const actionArea = document.getElementById( 'actions' );
-// const myMusic;
+
+const bgm = document.querySelector( '.bgm' );
+const bgmSound = new Audio( 'media/background.mp3' );
 
 let gameData = {
     dice: [
@@ -21,21 +23,25 @@ let gameData = {
     players: ['FIRE PIG', 'SHINING PIG'],
     score: [0, 0],
     roll1: 0,
-    roll2: 0,
     rollSum: 0,
     index: 0,
-    gameEnd: 29
+    gameEnd: 24
 };
 
 startGame.addEventListener('click', function(){
+    bgmSound.play();
+
     gameData.index = Math.round(Math.random());
     gameControl.innerHTML = '';
     gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
 
-    // myMusic = new sound("media/background.mp3");
-
     document.getElementById('quit').addEventListener('click', function(){
         location.reload();
+    });
+
+    bgm.addEventListener('click', function(){
+        bgmSound.pause();
+        bgmSound.currentTime = 0;
     });
 
     setUpTurn();
@@ -52,12 +58,11 @@ function setUpTurn() {
 function throwDice(){
     actionArea.innerHTML = '';
     gameData.roll1 = Math.floor(Math.random() * 6) + 1;
-    gameData.roll2 = Math.floor(Math.random() * 6) + 1;
     game.innerHTML = `<p>It's ${gameData.players[gameData.index]}'s turn.</p>`;
-    game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"><br><img src="${gameData.dice[gameData.roll2-1]}">`;
-    gameData.rollSum = gameData.roll1 + gameData.roll2;
+    game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">`;
+    gameData.rollSum = gameData.roll1;
 
-    if( gameData.rollSum === 2 ){
+    if( gameData.rollSum === 1 ){
         
         game.innerHTML += `<p>Doctor Stop!!!</p>`;
         gameData.score[gameData.index] = 0;
@@ -66,12 +71,14 @@ function throwDice(){
         showCurrentScore();
         setTimeout(setUpTurn, 2000);
         
-    } else if ( gameData.roll1 === 1 || gameData.roll2 === 1) {
+    } 
+    // else if ( gameData.roll1 === 1 || gameData.roll2 === 1) {
 
-        gameData.index ? (gameData.index = 0): (gameData.index = 1);
-        game.innerHTML += `<p>A Miss Punch! Switching to ${gameData.players[gameData.index]}</p>`;
-        setTimeout(setUpTurn, 2000);
-    } else {
+    //     gameData.index ? (gameData.index = 0): (gameData.index = 1);
+    //     game.innerHTML += `<p>A Miss Punch! Switching to ${gameData.players[gameData.index]}</p>`;
+    //     setTimeout(setUpTurn, 2000);
+    // } 
+    else {
         gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
         actionArea.innerHTML = '<button id="rollagain">Punch!</button> or <button id="pass">Defense</button>';
 
@@ -123,5 +130,22 @@ document.querySelector(".close").addEventListener("click", function(event){
 document.addEventListener("keydown", function(event){
     if (event.key === "Escape"){
         document.getElementById("overlay").className = "hidden";
+    }
+});
+
+// overlay2
+document.querySelector(".instruction").addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById("overlay2").className = "showing";
+});
+
+document.querySelector(".close2").addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById("overlay2").className = "hidden";
+});
+
+document.addEventListener("keydown", function(event){
+    if (event.key === "Escape"){
+        document.getElementById("overlay2").className = "hidden";
     }
 });

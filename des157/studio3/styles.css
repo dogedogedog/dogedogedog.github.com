@@ -1,11 +1,16 @@
 /* container position: relative to the viewport */
 /* buttons, players, numbers, message of points status' position: absolute to the container */
+body {
+    background-color: rgb(57, 57, 57);
+}
+
 #wrap {
     max-width: 1366px;
     min-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     background-color: rgb(75, 75, 75);
@@ -20,6 +25,23 @@ header p {
     line-height: 20px;
     font-size: 16px;
 }
+
+header ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 15px;
+}
+
+header ul a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(218, 218, 218);
+}
+
+header ul a:hover {
+    color: rgb(158, 157, 157);
+}
+
 
 button {
     display: inline-block;
@@ -113,6 +135,10 @@ footer ul a {
     color: rgb(218, 218, 218);
 }
 
+footer ul a:hover {
+    color: rgb(158, 157, 157);
+}
+
 #footerWrap {
     display: flex;
     flex-direction: row;
@@ -131,7 +157,7 @@ footer ul a {
     opacity: 1;
 }
 
-#overlay {
+#overlay, #overlay2 {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -149,6 +175,20 @@ footer ul a {
     padding: 20px;
     width: 300px;
     height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+/* overlay2 */
+#overlay2 article {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
