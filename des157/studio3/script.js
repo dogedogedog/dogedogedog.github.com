@@ -59,7 +59,7 @@ function throwDice(){
 
     if( gameData.rollSum === 2 ){
         
-        game.innerHTML += `<p>Snake Eyes!</p>`;
+        game.innerHTML += `<p>Doctor Stop!!!</p>`;
         gameData.score[gameData.index] = 0;
         gameData.index ? (gameData.index = 0): (gameData.index = 1);
 
@@ -69,7 +69,7 @@ function throwDice(){
     } else if ( gameData.roll1 === 1 || gameData.roll2 === 1) {
 
         gameData.index ? (gameData.index = 0): (gameData.index = 1);
-        game.innerHTML += `<p>One! A Miss Punch! Switching to ${gameData.players[gameData.index]}</p>`;
+        game.innerHTML += `<p>A Miss Punch! Switching to ${gameData.players[gameData.index]}</p>`;
         setTimeout(setUpTurn, 2000);
     } else {
         gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
