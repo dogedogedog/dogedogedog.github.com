@@ -1,13 +1,14 @@
 /* body with background and the viewport's width */
 
 body {
-    margin: auto;
+    /* margin: auto; */
     max-width: 1366px;
     min-width: 900px;
     background-color: #f0e6dc;
 }
 
 /* images on top and bottom that stay static */
+ 
 .border-top {
     position: absolute;
     top: 0;
@@ -20,24 +21,27 @@ body {
 
 /* #wrap for header, sections, and footer */
 /* style: all in center of the viewport */
-#wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+
+/* scrolling container*/
+#scrolling {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100vh;
+    white-space: nowrap;
 }
 
 /* "Dear Xinlei Li..." */
 header {
     font-family: 'Josefin Slab', serif;
+    font-size: 50px;
+    position: relative;
+    top: 30vh;
+    margin-left: 50px;
 }
 
 /* where all the contents be */
 #container {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     margin: auto;
@@ -47,27 +51,26 @@ header {
 
 .years {
     width: 600px;
-    position: relative;
+    /* position: relative; */
 }
 
 .years h2{
     font-family: 'Caveat', cursive;
     font-size: 100px;
     color: rgb(199, 170, 135);
-    z-index: 1;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; */
 }
 
 .keywords {
     opacity: 0.6;
     width: 500px;
-    z-index: -1;
-    position: absolute;
+
+    /* position: absolute;
     top: 300px;
     left: 300px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 /* footer: a vertical boxat the end of the page */
@@ -75,9 +78,9 @@ footer {
     background-color: #c3b2a6;
     width: 200px;
     height: 100vh;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0; */
 }
 
 footer ul {
