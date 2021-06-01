@@ -1,0 +1,130 @@
+/* set the maximum and minimum of the viewport */
+/* set the background color */
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    background-color: #0c0705f6;
+    background-image: url("pictures/background.jpg");
+    background-repeat: repeat;
+    margin: auto;
+}
+
+/* set header / banner in the middle */
+
+header {
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+    /* width: 683px;
+    height: 400px; */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    /* text style */
+    font-family: 'Cinzel Decorative', cursive;    
+    font-size: 60px;
+    letter-spacing: 5px;
+    line-height: 90px;
+    text-align: center;
+    color: #d8b279;
+
+    /* "graphic" style */
+    border: solid rgb(19, 12, 8);
+
+    padding: 40px 60px 40px 60px;
+    border-width: 15px 80px 15px 80px;
+    background-color: #7c71665d;
+}
+
+/* make all the <article> posts flex in the middle of the page no matter how the viewport changed */
+#container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    margin-top: 50px;
+    display: block;
+    width: 700px;
+}
+
+/* contents' style */
+
+/* h2: dates */
+h2 {
+    font-size: 25px;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 5px;
+    color: rgb(73, 52, 49);
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+}
+
+/* h3: titles */
+h3 {
+    margin-top: 0%;
+    font-family:'Titillium Web', sans-serif;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 2px;
+    color: #b4a18a;
+}
+
+/* p: general setting for both link and content */
+p {
+    font-size: 24px;
+    font-family:'Titillium Web', sans-serif;
+    letter-spacing: 3px;
+    color: rgb(161, 153, 144);
+    /* text-align: justify; */
+    line-height: 42px;
+}
+
+p.link {
+    font-style: oblique;
+    color: #5f5548;
+}
+
+a {
+    text-decoration: underline;
+    color: #5f5548c9;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+
+/* footer */
+footer {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center; */
+    padding: 50px 20px 0 0;
+
+    /* border-style: solid none none none; */
+
+}
+
+ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+footer a {
+    padding: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 5px;
+    color: rgb(73, 52, 49);
+    margin-bottom: 20px;
+}
