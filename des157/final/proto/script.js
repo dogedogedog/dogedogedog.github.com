@@ -28,13 +28,22 @@
     });
 
     // submit form and take user's text into original space
-    const form = document.querySelector("#myform")
+    const form = document.querySelector("#myform");
+
     form.addEventListener('submit', function(event){
         event.preventDefault();
         const letter = document.getElementById('user-letter').value;
-        let myText = `${letter}`;
+        let myText = `<article>
+        <h3>What will you write to the future you?</h3>
+        ${letter}
+        <button class="close">×</button>
+        
+        </article>`;
 
-        form.className = "hidden";
-        document.getElementById('submit-letter').innerHTML = myText;
+        document.getElementById('ol-year8').className = "overlay hidden";
+        const newOverlay = document.getElementById('ol-year8-b');
+        newOverlay.innerHTML = newOverlay.innerHTML + myText;
+        newOverlay.className = "overlay showing";
+        console.log(newOverlay.innerHTML);
     });
 })();
