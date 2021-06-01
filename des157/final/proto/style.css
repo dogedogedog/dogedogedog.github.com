@@ -1,7 +1,7 @@
 /* body with background and the viewport's width */
 
 body {
-    /* margin: auto; */
+    margin: auto;
     max-width: 1366px;
     min-width: 900px;
     background-color: #f0e6dc;
@@ -26,51 +26,54 @@ body {
 #scrolling {
     overflow-x: scroll;
     overflow-y: hidden;
-    height: 100vh;
     white-space: nowrap;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 /* "Dear Xinlei Li..." */
 header {
     font-family: 'Josefin Slab', serif;
-    font-size: 50px;
+    font-size: 40px;
     position: relative;
     top: 30vh;
     margin-left: 50px;
 }
 
-/* where all the contents be */
+/* where all the years and journal contents be */
 #container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
+    position: relative;
+    top: 20vh;
+}
+
+.empty-space {
+    width: 500px;
 }
 
 /* each year sections' style */
 
 .years {
     width: 600px;
-    /* position: relative; */
+    display: flex;
+    align-items: center;
+    
 }
 
 .years h2{
     font-family: 'Caveat', cursive;
     font-size: 100px;
     color: rgb(199, 170, 135);
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
+    
 }
 
 .keywords {
     opacity: 0.6;
     width: 500px;
-
-    /* position: absolute;
-    top: 300px;
-    left: 300px;
-    transform: translate(-50%, -50%); */
+    z-index: -1;
 }
 
 /* footer: a vertical boxat the end of the page */
