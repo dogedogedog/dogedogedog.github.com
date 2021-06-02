@@ -9,35 +9,6 @@ body {
     margin: auto;
 }
 
-/* set header / banner in the middle */
-
-header {
-    display: flex;
-    margin: auto;
-    padding-top: 100px;
-    /* width: 683px;
-    height: 400px; */
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    /* text style */
-    font-family: 'Cinzel Decorative', cursive;    
-    font-size: 60px;
-    letter-spacing: 5px;
-    line-height: 90px;
-    text-align: center;
-    color: #d8b279;
-
-    /* "graphic" style */
-    border: solid rgb(19, 12, 8);
-
-    padding: 40px 60px 40px 60px;
-    border-width: 15px 80px 15px 80px;
-    background-color: #7c71665d;
-}
-
 /* make all the <article> posts flex in the middle of the page no matter how the viewport changed */
 #container {
     display: flex;
@@ -55,7 +26,7 @@ article {
 /* contents' style */
 
 /* h2: dates */
-h2 {
+h3 {
     font-size: 25px;
     font-family: 'Passion One', cursive;
     letter-spacing: 5px;
@@ -65,7 +36,7 @@ h2 {
 }
 
 /* h3: titles */
-h3 {
+h2 {
     margin-top: 0%;
     font-family:'Titillium Web', sans-serif;
     font-size: 40px;
