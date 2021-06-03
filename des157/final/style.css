@@ -77,7 +77,7 @@ body {
     font-size: 30px;
 }
 
-#ol-year8 article {
+#ol-year8 article, #ol-year8-b article {
     text-align: center;
     padding: 50px;
     font-family: 'Josefin Slab', serif;
@@ -107,13 +107,28 @@ body {
 } */
 
 /* "Dear Xinlei Li..." */
-header {
+header{
     font-family: 'Josefin Slab', serif;
     font-size: 40px;
     position: relative;
     top: 30vh;
     margin-left: 50px;
     z-index: -1;
+}
+
+header h2 {
+    font-size: 24px;
+    text-align: right;
+    position: relative;
+    animation-name: arrow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {left:0px; opacity: 1;}
+    50% {left: 300px; opacity: 0.3;}
+    100% {left: 0px; opacity: 1;}
 }
 
 /* where all the years and journal contents be */
@@ -139,7 +154,7 @@ header {
 
     font-family: 'Josefin Slab', serif;
     font-size: 80px;
-    color: #eed7c0;
+    color: #e3d0be;
 }
 
 /* .years:hover {
