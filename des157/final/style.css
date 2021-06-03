@@ -1,0 +1,239 @@
+/* body with background and the viewport's width */
+
+body {
+    margin: auto;
+    max-width: 1366px;
+    min-width: 900px;
+    max-height: 768px;
+    background-color: #f0e6dc;
+}
+
+/* images on top and bottom that stay static */
+#bg {
+    z-index: 0;
+}
+ 
+.border-top {
+    position: absolute;
+    top: 0;
+}
+
+.border-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+/* overlay setting */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.overlay article {
+    box-sizing: border-box;
+    background-color: #e3d0be;
+    width: 550px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    border: solid black 5px;
+}
+
+.overlay article p {
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 27px;
+    color: black;
+    padding: 12px;
+}
+
+.overlay article button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: #e3d0be;
+    border: none;
+    font-size: 30px;
+}
+
+#ol-year8 article {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+}
+
+#ol-year8 article input, label {
+    text-align: center;
+}
+
+/* #wrap for header, sections, and footer */
+/* style: all in center of the viewport */
+
+/* scrolling container*/
+#scrolling {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* transform: rotateX(180deg); */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header, main, footer {
+    transform: rotateX(180deg);
+} */
+
+/* "Dear Xinlei Li..." */
+header {
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    position: relative;
+    top: 30vh;
+    margin-left: 50px;
+    z-index: -1;
+}
+
+/* where all the years and journal contents be */
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: relative;
+    top: 20vh; */
+}
+
+.empty-space {
+    width: 300px;
+}
+
+/* years sections' style */
+.years {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Josefin Slab', serif;
+    font-size: 80px;
+    color: #eed7c0;
+}
+
+/* .years:hover {
+    font-size: 90px;
+    color: #eed7c0;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+} */
+
+/* each years' images */
+#year1, #year2, #year3, #year4, #year5, #year6, #year7, #year8 {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#year1 {
+    background-image: url("images/2014.jpg");
+}
+
+#year2 {
+    background-image: url("images/2015.jpg");
+}
+
+#year3 {
+    background-image: url("images/2016.jpg");
+}
+
+#year4 {
+    background-image: url("images/2017.jpg");
+}
+
+#year5 {
+    background-image: url("images/2018.jpg");
+}
+
+#year6 {
+    background-image: url("images/2019.jpg");
+}
+
+#year7 {
+    background-image: url("images/2020.jpg");
+}
+
+#year8 {
+    background-image: url("images/2021.jpg");
+    font-size: 100px;
+    color: black;
+}
+
+/* end of the page */
+#end {
+    margin-right: 50px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    position: relative;
+    top: 50vh;
+    text-align: right;
+    z-index: -1;
+}
+
+/* footer: a vertical boxat the end of the page */
+footer {
+    background-color: #c3b2a6;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+footer ul li{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer ul li a {
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+footer ul li a:hover {
+    color: purple;
+    text-decoration: underline;
+}

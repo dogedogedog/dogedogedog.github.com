@@ -4,15 +4,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Final Proto</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
     <!-- google fonts -->
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- overlay for user test questions -->
+
+    <div id="bg">
+        <img src="images/border-top.png" alt="border-top" class="border-top">
+        <img src="images/border-bottom.png" alt="border-bottom" class="border-bottom">
+    </div>
+
+    <!-- overlays for years-->
+    <section id="ol-year1" class="overlay hidden">
+        <article>
+            <p>Everyone just waved goodbye to Christmas in 2014 and immediately starts to greet the 2015 New Year. Stopping and looking back, I really experienced a lot this year. For me, I needed to prepare for the high school entrance examination and gnaw on vocabulary books at the same time. I rushed to find a restaurant for the reunion of elementary school classmates, hurriedly writing down the short farewell speech to junior high school graduation. After being decadent for more than a month, I hurriedly carried my luggage and started my travel to several states in the United States with my classmates. I wiped my sweat, went to the small base in the new oasis without stopping, and then ran to the school after only a few days of rest. All kinds of short-term school trips and house changes, Thanksgiving and Christmas, finally passed. 
+            <br><br>For the world, 25 languages got together and interpreted the same song Let it go; Chinese aunts' square dance became famous in Russia; Malaysia Airlines Flight 370 disappeared in the shadow; life continued and headed for the future.
+            <br><br>All of this, I don't know whether it will have a negligible impact on you next year, but no matter what, everything will become the past. Wish in the new year you will be able to hold your head high and take steps to the next new year.
+            <br><br>Nice to see you, 2015.</p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year2" class="overlay hidden">
+        <article>
+            <p>2015 was a bit too peaceful for me. After been left China for a year, I have become familiar with all kinds of personnel. I also start to work hard for the future. My daily routine is very regular: school in the morning, tuition at home in the evening, a small long-distance run on Friday, one writing and a little song when I have time, one Korean beginning lesson at noon, and a video chat with my mom and dad on weekends. 
+                <br>
+                <br>If there is something not peaceful, maybe it was that quarrel with my housemate at the beginning of the year. Maybe it was my super bad score I heard on my birthday. Maybe it was the uncertainty of my future. Maybe it was the fear of losing all my hair before 20. Maybe it was the peer pressure that affected me every day. 
+                <br>
+                <br>Maybe I just need to calm down and tell myself it's not a big deal. 
+                <br>
+                <br>I feel that my friendship with others is born from conflicts, which happened between my housemate and me. Well, I guess friendship first, and the future is the future. Grasping the present is my current task. 
+                <br>
+                <br>My white hair is also much less. 
+                <br>
+                <br>There is always someone better than me, so I need to see what's important for myself instead of comparing myself with others.
+                <br>
+                <br>Deciding to give up something is not easy. I used to think that I could do it. Now I think I am too naive. My ability is restricted; I have to work hard with tears. Just one more year, just one more year. I can do it.
+                <br>
+                <br>I miss my friends so much.
+                <br>
+                <br>There are still some happy things. For example, I finally lost weight; I finally found my interest; I finally became more sensitive to others' emotions. In short, I am still a very ordinary person, but it is enough. I only hope that I can find a good job in the future, make enough money to afford my life, and be able to take on the responsibilities before my parents retire.
+                <br>
+                <br>In 2016, please let me say hello. Please let me have more time to rest. Please don't let my efforts go in vain. I hope I am not a fool anymore.</p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year3" class="overlay hidden">
+        <article>
+            <p>I'm going to Florida soon, so I decide to write this down today.
+                <br>
+                <br>All kinds of things happened this year. UK left the EU, and Trump wanted to become the president... Unlike last year and the year before, I don't care much about other current affairs.
+                <br>
+                <br>It's too busy. At the beginning of the year, when I was still in the 11th grade, life pace was actually okay, but things changed after been back in China. The standardized test results were very disappointing, so I worked harder in classes in Beijing. My father's place was too far away from the cram school. We spent almost half of a day in traffic. I spent my nights on my homework, but my scores were getting worse and worse. I didn't have any time to exercise or to eat the delicious food I miss in the US. The teachers from the agency were disappointed in me. 
+                <br>
+                <br>Many things also happened in school after I returned to the US. The new international students were so talented. In comparison, I am so mediocre. Maybe this is my retribution to be so stupid in the past. Maybe I'm just trying to find excuses for the fun and relaxing time I spent on anime and sleep.
+                <br>
+                <br>I cry a lot recently. I'm so ridiculous. 
+                <br>
+                <br>Hey Xinlei, all your friends who sit in the same class with you before are now better than you in the exam, more talented than you, more skilled than you, and more thoughtful than you. You have to listen to some criticism and truly accept it! 
+                <br>
+                <br>I started to ask the air, who am I? 
+                <br>
+                <br>When my parents ordered me to dinner with strange adults, I wondered if I were a tool to show my parents' privilege over others. When the teachers from the agency said, "you will find boyfriends with more intellectual thinking level if you get higher scores on SAT and receive offers from higher-ranking colleges," I wondered if I were someone's girlfriend. When those classmates asked me for help on their physics assignments, I wondered if I were just a machine. 
+                <br>
+                <br>People here say that God has created a way for everyone in this world. We only need to follow Him. But I don't know it.
+                <br>
+                <br>At this time, I started to choose my major for my future. To be honest, I have no idea what to do. Then, school started. Though I have failed on many things I don't want to mention, I successfully started the Culture Club with my Korean friend. I achieved ideal results for the papers and tests on The Once and Future King. I took many pictures for my friends on the field trip to South Carolina, and they liked the pictures a lot. I'm also proud of myself for having that great speech on Power of Selfies, which I wrote by playing my favorite video game.
+                <br>
+                <br>Eventually, I realize that I can do better on things I like. Even though I haven't done any fantastic works to make people feel proud of me, it's good to take a rest and see what's happening at the moment. Hey, someone traces you; someone cheers for you; someone waits for you; someone says hi to you. And don't forget you are always there with you. Just trust yourself. I know it's hard, but stop comparing yourself with others. Try to say no. Stop caring so much about how other people see you. 
+                <br>
+                <br>Xinlei, when you read this letter, I hope, after ten years, or maybe after one and a half years, you will get better by yourself without any help from others. 
+                <br>
+                <br>In 2017, make decisions based on your feeling and simply enjoy your life!
+                </p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year4" class="overlay hidden">
+        <article>
+            <p>Probably 2017 is the most extraordinary and also the most ordinary year for me until now. There are no big ups and downs, and there is no new view of life and self like in the past. However, I finally started my college life and had some fantastic experiences. My graduation trip from high school was perfect. I met many interesting people, and I also had a few romantic memories that belong only to me.
+                <br>
+                <br>At the beginning of this year, I was still in that high school. I almost went mad because of that homestay. After graduation, I visited my hometown and traveled to Hongkong. I threw up at the airport, but it was a lot of fun. Later, college life started. The dormitory was good, my roommate was friendly, and new friends in the same building were also good. I have fallen behind in my studies, but it's okay. The teacher from the language class is so friendly.
+                <br>
+                <br>My keyword this year is probably "friendship." I have met people with such diverse backgrounds: people from the north and the south of the US, the international students who went abroad at an early age like me, people with dramatic personalities and inspiring thoughts, etc. Well, I think friendship depends on fate. Let it go, let it go. 
+                <br>
+                <br>I also met with some girls with sweet love fantasy. I was surprised because I didn't have any thoughts about my future love one. 
+                <br>
+                <br>This year, I just didn't have enough energy, and I didn't do anything special. I'm 18, and I still have time. Let's work hard.</p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year5" class="overlay hidden">
+        <article>
+            <p>I hate to meet unfamiliar people. I don't know why people close to me keep saying that "oh, she is very optimistic about everything. Don't worry about her." When I tried to express a few of my upset feelings, non one believed. 
+                <br>
+                <br>The insignificant details you ignored in life continue to accumulate in the development of time, changing your character, suppressing your inner, little by little.
+                <br>
+                <br>I tried to copy other people's ways of communication. I took notes on what they talked about every day, how they express different emotions, what responses they gave to common questions, etc. 
+                I summed up many social rules, which helped me fit into some groups later, but that's just superficial stuff. Indeed, I can't feel my emotions. I don't know what's interesting. I'm acting without genuineness.
+                <br>
+                <br>This abnormal state of mind makes me very, very, very sick of myself. Therefore, I start arguing with myself constantly.
+                <br>
+                <br>I really don't feel comfortable being with people. It's painful. I am very tired every day. 
+                <br>
+                <br>In 2018, I locked myself up during the summer vacation. I don't think I can do anything. I find those people annoying.
+                <br>
+                <br>The therapist told me, "it's okay." 
+                <br>
+                <br>Xinlei, you need to know that you like it and you want to do it for yourself instead of proving something to others. Just accept that it is your fate and get rid of it right away. Stop fighting with it.
+                <br>
+                <br>In 2019, I hope you will continue to walk this path well and stop living so tired like I am now. The idea of ​​overthrowing the past is not a betrayal but a different way of living at other times. It doesn't matter whether you are happy or not. Don't be so obsessed with sincerity and seriousness.</p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year6" class="overlay hidden">
+        <article>
+            <p>Another year. Another painful year.
+                <br>
+                <br>Every year I write a letter to the future you, but I really can't write anything for this year.
+                <br>
+                <br>Okay. Let me think. After the quarter abroad program, I had a new housemate, but she is pretty childish. People around me have changed too much. All the dance team members I know have left. I don't know where I belong to. 
+                <br>
+                <br>The only things staying the same are probably my favorite guitar, design, and my animation dream.
+                <br>
+                <br>I met a guitar teacher who said that my ears were very smart. She is very cool. She held the lessons on the street in summer. Within the noise of the town, I felt I was throwing away some chaotic thoughts in my deep mind.
+                <br>
+                <br>I met that professor. He is very gentle. The tea he offered was very heartwarming. One time he asked me if I liked roller coaster. I said I like it. I like it very much. I like the feeling that I am about to fall and suddenly thrown up into the sky. He said, "think about those feelings carefully, and substitute those feelings into every moment that makes me uncomfortable."
+                <br>
+                <br>I met Ruby. She is the essence of all the beautiful things in the world. I can't believe she has become my friend. She really gave me a lot of strength. I became stronger because of her.
+                <br>
+                <br>I also ran into Kylie, a graceful American girl.
+                <br>
+                <br>I met an entire delightful Aikido class in the new fall quarter.
+                <br>
+                <br>My therapist is also very cute.
+                <br>
+                <br>I used to think that you would not live to be 19 years old, but you came alive. 
+                <br>
+                <br>Hey Xinlei, I learned a precious lesson this year. There are no words to describe and express many feelings and sincerity, so don't worry about it. I hope you in the future can be comforted and dispel some doubts.
+                I always blame myself. I don't know if you will be such a person. I hope you don't blame yourself and don't judge your past. The past is the time of death, and you are responsible for those days that are still alive.</p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year7" class="overlay hidden">
+        <article>
+            <p>This year is the same as last year: I don't know what to say. However, this year is much happier than last year. 
+                <br>
+                <br>I didn't make any new friends. 
+                <br>
+                <br>Oh, I met one friend online. She is the only follower I have for that account. I don't even know why she followed me back because everything I posted was non-sense. She is very interesting and brave.
+                <br>
+                <br>Housemate... Not going to talk about it.
+                <br>
+                <br>Olivia started her relationship. I wish everything good for her.
+                <br>
+                <br>I became closer to Mengmeng. She stayed in my place for a night. I was about to sleep but then started talking again. It really seemed like going back to kindergarten while I expected other children to come and be my guests at home and have a pajama party together. 
+                <br>
+                <br>Fall quarter was... okay? I'm not so satisfied with my final design. I'm pretty worried about my future, but I feel I'm calmer than before. Maybe I have learned to deal with it.
+                <br>
+                <br>I have great expectations for you next year. How about your animation? Is your web page up? How is your new place? What does the graduation ceremony look like? How about covid? How is the university?
+                <br>
+                <br>What I learned the most this year is probably that the plan can't keep up with the changes. The trip to San Francisco is canceled because of COVID, and I can't go back to China. It's happy enough to sleep at home, and I hope you feel the same.
+                <br>
+                <br>2021. I had never imagined anything about 2021 before. I was shocked enough when 2018 came. Anyway, Xinlei from 2021, I hope you don't often stay up all night. Read some books when you are free. It helps to find design inspiration. Work hard. Work hard for yourself. Be well.</p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year8" class="overlay hidden">
+        <article>
+            <h3>What will you write to the future you?</h3>
+
+            <form id="myform">
+                <textarea id="user-letter" name="user-letter" cols="30" rows="5">Hi ...</textarea>
+                <br>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-year8-b" class="overlay hidden">
+        <article>
+            <h3>What will you write to the future you?</h3>
+
+            <button class="close">×</button>
+        </article>
+    </section>
+
+    <section id="ol-about" class="overlay hidden">
+        <article>
+
+            <p>Hello, I'm Xinlei Li. As you may have noticed, there is a letter from me to the future me every year. 
+                <br>
+                <br>I have never succeeded in keeping a daily diary, and I don't like to see my handwriting, so I use different forms to record my memories. You can also check my <a href="https://dogedogedog.github.io/des157/studio2/index.html">Memory Collection</a> with my scrapbook pieces and stories behind them. I can't recall how I started; anyway, every year, on a random day in December, I lie in bed, think about what has happened this year, think about my growth, and then have some plans or questions for the future me. It's always interesting to see how different I was in the past. 
+                <br>
+                <br>It's a very personal piece, but I hope you enjoy reading and looking at the pictures for the year's cover so far. </p>
+
+            <button class="close">×</button>
+        </article>
+    </section>
     
+    <div id="scrolling">
+        <header>
+            <h1>" Hello Xinlei Li , </h1>
+        </header>
+
+        <main>
+
+            <div id="container">
+                <div class="empty-space"></div>
+
+                <article class="years open" id="year1">
+                    <h2>2014</h2>
+                </article>
+
+                <article class="years open" id="year2">
+                    <h2>2015</h2>
+                </article>
+
+                <article class="years open" id="year3">
+                    <h2>2016</h2>
+                </article>
+
+                <article class="years open" id="year4">
+                    <h2>2017</h2>
+                </article>
+
+                <article class="years open" id="year5">
+                    <h2>2018</h2>
+                </article>
+
+                <article class="years open" id="year6">
+                    <h2>2019</h2>
+                </article>
+
+                <article class="years open" id="year7">
+                    <h2>2020</h2>
+                </article>
+
+                <article class="years open" id="year8">
+                    <h2>?</h2>
+                </article>
+
+                <div class="empty-space"></div>
+
+            </div>
+        </main>
+
+        <div id="end">
+            <h1>Your friend , <br>Xinlei Li "</h1>
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="#" class="open" id="about">About this page</a>
+                </li>
+                <li><a href="https://validator.w3.org/check?uri=https://dogedogedog.github.io/des157/final/proto/index.html">Valid HTML5</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/check?uri=uri=https://dogedogedog.github.io/des157/final/proto/style.css">Valid CSS</a></li>
+            </ul>
+        </footer>
+    </div>
+
 </body>
 </html>
