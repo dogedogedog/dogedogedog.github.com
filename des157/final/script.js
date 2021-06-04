@@ -36,7 +36,6 @@
         let myText = `<article>
         <h3>What will you write to the future you?</h3>
         ${letter}
-        <button class="close">×</button>
         
         </article>`;
 
